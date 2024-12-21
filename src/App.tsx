@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <div className="min-h-screen p-4 flex items-center justify-center bg-gray-100">
-      <div className="container mx-auto flex flex-col items-center justify-center bg-slate-100 border-4 border-gray-900 shadow-xl rounded-md p-8 md:w-3/5">
+      <div className="container mx-auto flex flex-col items-center justify-center bg-slate-100 border-4 border-gray-900 shadow-2xl rounded-xl p-8 md:w-3/5">
         <h1 className="text-4xl font-bold text-blue-500 mb-8 text-center">
           Math Skills for Kids
         </h1>

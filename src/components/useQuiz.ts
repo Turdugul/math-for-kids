@@ -41,7 +41,7 @@ const quizReducer = (state: State, action: Action): State => {
         return {
           ...state,
           correctCount: updatedCorrectCount,
-          isComplete: updatedCorrectCount >= 5,
+          isComplete: updatedCorrectCount >= 10,
         };
       };
     case "SET_USER_ANSWER":

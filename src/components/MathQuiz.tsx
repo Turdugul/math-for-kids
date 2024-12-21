@@ -111,7 +111,7 @@ const MathQuiz = ({ operation, difficulty }: { operation: string; difficulty: st
 
   return (
     <div className="flex flex-col items-center">
-      <h2 className="text-3xl font-bold text-purple-500 mb-1">{operation} Quiz</h2>
+      <h2 className="text-2xl font-bold text-purple-500 mb-1"> Quiz {operation}</h2>
       {state.isComplete ? (
         <QuizResult handleRestart={handleRestart} />
       ) : (
@@ -126,7 +126,7 @@ const MathQuiz = ({ operation, difficulty }: { operation: string; difficulty: st
             <p>{message}</p> {/* Message displayed here */}
           </div>
           <div className="mt-2 text-gray-700">
-            Correct Answers: {state.correctCount} / 5
+            Correct Answers: {state.correctCount} / 10
           </div>
         </>
       )}

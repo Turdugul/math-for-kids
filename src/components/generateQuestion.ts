@@ -5,7 +5,7 @@ export const generateQuestion = (operation: string, difficulty: string) => {
   let correctAnswer = 0;
   
   // Define difficulty ranges
-  const maxNum = difficulty === "easy" ? 20 : difficulty === "medium" ? 50 : 120;
+  const maxNum = difficulty === "easy" ? 20 : difficulty === "medium" ? 50 : 99;
 
   switch (operation) {
     case "+":
