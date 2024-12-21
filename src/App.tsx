@@ -11,9 +11,9 @@ const App = () => {
         <h1 className="text-4xl font-bold text-blue-500 mb-8 text-center">
           Math Skills for Kids
         </h1>
-        <h4 className="text-base font-bold text-blue-500 text-center">
+        <p className="text-lg  text-gray-700 text-center mb-2">
           Choose difficulty
-        </h4>
+        </p>
         <div className="grid grid-cols-3 gap-1 text-lg mb-3">
           <button
             onClick={() => setDifficulty("easy")}
@@ -36,9 +36,7 @@ const App = () => {
         </div>
 
         {/* Navigation Bar */}
-        <h4 className="text-base font-bold text-blue-500 text-center">
-          Choose operation
-        </h4>
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-xl">
           <button
             onClick={() => setSelectedOperation("+")}

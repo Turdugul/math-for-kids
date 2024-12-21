@@ -122,7 +122,7 @@ const MathQuiz = ({ operation, difficulty }: { operation: string; difficulty: st
             setUserAnswer={setUserAnswer}
             handleSubmit={handleSubmit}
           />
-          <div className="mt-1 text-red-500">
+          <div className=" text-red-500">
             <p>{message}</p> {/* Message displayed here */}
           </div>
           <div className="mt-2 text-gray-700">
