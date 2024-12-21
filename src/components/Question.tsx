@@ -11,7 +11,7 @@ const QuestionDisplay: React.FC<QuestionDisplayProps> = ({ question, userAnswer,
   return (
     <div className="flex flex-col items-center">
       <div className="flex flex-col sm:flex-row gap-3 p-4">
-      <div className="text-xl mb-4 ">{question} = </div>
+      <div className="text-xl mb-1 ">{question} = </div>
       <input
         type="number"
         value={userAnswer}
