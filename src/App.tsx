@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="min-h-screen p-4 flex items-center justify-center bg-gray-100">
       <motion.div
-        className="container mx-auto flex flex-col items-center justify-center bg-slate-100 border-4 border-gray-900 shadow-2xl rounded-xl p-8 md:w-3/5"
+        className="container mx-auto flex flex-col items-center justify-center bg-slate-100 border-2 border-gray-700 shadow-2xl rounded-xl p-8 md:w-3/5"
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -33,7 +33,7 @@ const App = () => {
         </motion.p>
 
         <motion.div
-          className="grid grid-cols-3 gap-1 text-lg mb-3"
+          className="grid grid-cols-3 gap-1 text-lg mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.4 }}
@@ -42,7 +42,7 @@ const App = () => {
             <motion.button
               key={level}
               onClick={() => setDifficulty(level)}
-              className={`p-2 text-base md:p-4 text-white rounded-full shadow-lg transition duration-300 ${
+              className={`p-2 text-base md:p-2 text-white rounded-full shadow-lg transition duration-300 ${
                 difficulty === level
                   ? level === "easy"
                     ? "bg-green-500"
@@ -87,7 +87,7 @@ const App = () => {
         <AnimatePresence mode="wait">
           {!selectedOperation ? (
             <motion.p
-              className="text-lg text-gray-700 text-center"
+              className="text-lg text-gray-700  mt-3 text-center"
               key="select-message"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
